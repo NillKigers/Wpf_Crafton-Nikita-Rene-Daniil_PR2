@@ -7,10 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <StackPanel x:Name="stackPanel">
-            <CheckBox x:Name="chekBox1" IsThreeState="True" IsChecked="False" Height="20" Content="Неотмечено" />
-            <CheckBox x:Name="chekBox2" IsThreeState="True" IsChecked="True" Height="20" Content="Отмечено" />
-            <CheckBox x:Name="chekBox3" IsThreeState="True" IsChecked="{x:Null}" Height="20" Content="Неопределено" />
-        </StackPanel>
+        <RadioButton GroupName="Boot" x:Name="RadioButton_Boot1" Checked="RadioButton_Checked">Загрузиться с жесткого диска</RadioButton>
+        <RadioButton GroupName="Boot" x:Name="RadioButton_Boot2" Checked="RadioButton_Checked">Загрузиться с DVD диска</RadioButton>
+        <RadioButton GroupName="Boot" x:Name="RadioButton_Boot3" Checked="RadioButton_Checked">Установить операционную систему</RadioButton>
+        <RadioButton Content="C#" HorizontalAlignment="Left" Margin="12,72,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <RadioButton Content="VB.NET" HorizontalAlignment="Left" Margin="12,91,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <RadioButton Content="C++" HorizontalAlignment="Left" Margin="12,110,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <RadioButton Content="WPF" HorizontalAlignment="Left" Margin="12,128,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <RadioButton Content="WinForms" HorizontalAlignment="Left" Margin="12,146,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <RadioButton Content="ASP.NET" HorizontalAlignment="Left" Margin="12,165,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+
+
     </Grid>
 </Window>
