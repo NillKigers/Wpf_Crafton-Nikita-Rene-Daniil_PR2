@@ -27,7 +27,7 @@ namespace Wpf_Crafton_Nikita_Rene_Daniil_PR2
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Кнопка нажата");
+            MessageBox.Show("Состояние кнопки: " + (sender as System.Windows.Controls.Primitives.ToggleButton).IsChecked);
         }
     }
 }

@@ -7,7 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="button1" Content="Hello" HorizontalAlignment="Left" Margin="371,179,0,0" VerticalAlignment="Top" Width="128" Height="72" Click="Button_Click"/>
-
+        <StackPanel x:Name="stackPanel">
+            <CheckBox x:Name="chekBox1" IsThreeState="True" IsChecked="False" Height="20" Content="Неотмечено" />
+            <CheckBox x:Name="chekBox2" IsThreeState="True" IsChecked="True" Height="20" Content="Отмечено" />
+            <CheckBox x:Name="chekBox3" IsThreeState="True" IsChecked="{x:Null}" Height="20" Content="Неопределено" />
+        </StackPanel>
     </Grid>
 </Window>
