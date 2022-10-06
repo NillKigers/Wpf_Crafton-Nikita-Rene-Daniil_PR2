@@ -29,5 +29,11 @@ namespace Wpf_Crafton_Nikita_Rene_Daniil_PR2
         {
             MessageBox.Show("Состояние кнопки: " + (sender as System.Windows.Controls.Primitives.ToggleButton).IsChecked);
         }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            RadioButton pressed = (RadioButton)sender;
+            MessageBox.Show(pressed.Content.ToString());
+        }
     }
 }
